@@ -349,7 +349,7 @@ function interval() {
     if (skipped || scored)
       return
 
-    time--;
+    // time--;
     setTimeBar(time/timeMax);
 }
 
