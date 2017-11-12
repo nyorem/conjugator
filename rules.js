@@ -629,6 +629,34 @@ var II_ADJECTIVE = [
   Modifier(ModTypes.TE, function(w){
     return trimLast(w) + 'くて';
   })
+
+]
+
+var NA_ADJECTIVE = [
+  Modifier([ModTypes.FORMAL], function(w){
+    return w + 'です';
+  }),
+  Modifier([ModTypes.PAST], function(w){
+    return w + 'だった';
+  }),
+  Modifier([ModTypes.FORMAL, ModTypes.PAST], function(w){
+    return w + 'でした';
+  }),
+  Modifier([ModTypes.NEGATIVE], function(w){
+    return w + 'じゃない';
+  }),
+  Modifier([ModTypes.FORMAL, ModTypes.NEGATIVE], function(w){
+      return w + 'じゃありません';
+  }),
+  Modifier([ModTypes.NEGATIVE, ModTypes.PAST], function(w){
+    return w + 'じゃなかった';
+  }),
+  Modifier([ModTypes.FORMAL, ModTypes.NEGATIVE, ModTypes.PAST], function(w){
+    return w + 'じゃありませんでした';
+  }),
+  Modifier(ModTypes.TE, function(w){
+    return w + 'で';
+  })
 ]
 
 var IRREGULAR_SURU = [

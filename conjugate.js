@@ -107,7 +107,8 @@ $(document).ready(function() {
     }
 
     genOpts('adjective-options', [
-      ['い adjectives', 'iadj']
+      ['い adjectives', 'iadj'],
+      ['な adjectives', 'naadj'],
     ]);
 
     genOpts('conjugation-options', [
@@ -137,6 +138,10 @@ $(document).ready(function() {
     genOpts('kanji-options',[
       ['Show and Accept Kanji', 'kanji'],
       ['Show Furigana', 'furigana'],
+    ]);
+
+    genOpts('misc-options',[
+      ['Enable timer', 'timer'],
     ]);
 
     $("#option-menu input:checkbox")
@@ -306,6 +311,9 @@ function pickType() {
       if($("#opt-iadj:checked").length)
         sets.push([II_ADJECTIVE, ii_adjective, '[i] adj.']);
 
+      if($("#opt-naadj:checked").length)
+        sets.push([NA_ADJECTIVE, na_adjective, '[na] adj.']);
+
       // keep last
       if($("#opt-to_be:checked").length || !sets.length)
       {
@@ -349,7 +357,9 @@ function interval() {
     if (skipped || scored)
       return
 
-    // time--;
+    if($("#opt-timer:checked").length) {
+        time--;
+    }
     setTimeBar(time/timeMax);
 }
 

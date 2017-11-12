@@ -502,3 +502,8 @@ var ii_adjective = [
   new Term('やわらかい', '柔らかい', '<ruby>柔<rp>(</rp><rt>やわ</rt><rp>)</rp></ruby>らかい', 'tender - soft'),
   new Term('わかい', '若い', '<ruby>若<rp>(</rp><rt>わか</rt><rp>)</rp></ruby>い', 'young'),
 ]
+
+var na_adjective = [
+  new Term('しずか', '静か', '<ruby>静<rp>(</rp><rt>しず</rt><rp>)</rp></ruby>か', 'quiet'),
+    // TODO
+]
