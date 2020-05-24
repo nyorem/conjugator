@@ -394,7 +394,7 @@ var godan = [
   new Term('へる', '減る', '<ruby>減<rp>(</rp><rt>へ</rt><rp>)</rp></ruby>る', 'to decrease, reduce'),
   new Term('ほしがる', '欲しがる', '<ruby>欲<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>しがる', 'to want, desire'),
   new Term('ほす', '干す', '<ruby>干<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>す', 'to dry, air'),
-  new Term('ほどく', '解く', '<ruby>解<rp>(</rp><rt>と</rt><rp>)</rp></ruby>く', 'to untie'),
+  new Term('とく', '解く', '<ruby>解<rp>(</rp><rt>と</rt><rp>)</rp></ruby>く', 'to untie'),
   new Term('ほのめかす', '仄めかす', '<ruby>仄<rp>(</rp><rt>ほの</rt><rp>)</rp></ruby>めかす', 'to hint'),
   new Term('ほる', '掘る', '<ruby>掘<rp>(</rp><rt>ほ</rt><rp>)</rp></ruby>る', 'to dig'),
   new Term('ほろびる', '滅びる', '<ruby>滅<rp>(</rp><rt>ほろ</rt><rp>)</rp></ruby>びる', 'to perish'),
